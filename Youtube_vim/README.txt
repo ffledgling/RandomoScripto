@@ -4,7 +4,7 @@
 * Licence: WTFPL2                                          *
 ************************************************************
 
-* Even though it's WTFPL2, a mention or attribution would is always nice :)
+* Even though it's WTFPL2, a mention or attribution would be/is always nice :)
 
 * This is probably very rough around the edges,
   therefore feedback from experienced souls is always welcome!
@@ -17,6 +17,9 @@
 > Requirements:
     >> Vim with python support (+python)
     >> VLC's CLI
+    >> You probably want to setup VLC to run only one instance
+       at a time and optionally setup enqueuing tracks.
+       (See here: https://wiki.archlinux.org/index.php/VLC_media_player#Preventing_multiple_instances)
 
 
 > Suggested enhancement:
@@ -42,5 +45,9 @@
     >> Add "Now playing <Song Name>" to statusline
 
     >> Add functions to pause, resume, enqueue
-        Hint: Look at vlc/cvlc command line args
+       
+       Hint#1: Look at vlc/cvlc command line args
+       
+       Hint#2: Use VLC's telnet interface, look at
+       http://crunchbang.org/forums/viewtopic.php?pid=112035%23p112035#p112035
 
