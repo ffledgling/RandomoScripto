@@ -4,7 +4,7 @@
 # Author: Anhad Jai Singh (:ffledgling)                                 #
 # License: WTFPL2 [http://www.wtfpl.net/about/]                         #
 #                                                                       #
-# Description:                                                          #                   
+# Description:                                                          #
 #   A genric mail sending script with lots of options for cli useage.   #
 #                                                                       #
 # Note:                                                                 #
@@ -18,12 +18,14 @@ import sys
 
 # Import smtplib to provide email functions
 import smtplib
- 
+
 # Import the email modules
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-verbose = False # Not verbose by default
+# Not verbose by default
+verbose = False
+
 
 class MailError(Exception):
 # Generic MailError class
@@ -43,6 +45,7 @@ parser.add_argument('-s', '--subject', help='Subject for email.')
 parser.add_argument('-t', '--text', help='file or string containing text')
 parser.add_argument('-u', '--sender', help='Sender\'s user ID', required=True)
 parser.add_argument('-v', '--verbose', help='Verbose output', action='store_true')
+parser.add_argument('-w', '--wait', help='Wait time', type=int, default=1)
 parser.add_argument('-x', '--html', help='file or string containing [X]HTML.')
 
 args = parser.parse_args()
@@ -174,10 +177,10 @@ for addr_to in LIST.split('\n')[:-1]:
         part2 = MIMEText(html, 'html')
         msg.attach(part2)
 
-
     # Send the message via an SMTP server
     s = smtplib.SMTP(smtp_server)
-    s.login(smtp_user,smtp_pass)
+    s.login(smtp_user, smtp_pass)
     s.sendmail(addr_from, addr_to, msg.as_string())
     sys.stderr.write('Done.\n')
+    time.sleep(args.sleep)
 s.quit()
