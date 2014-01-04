@@ -1,0 +1,26 @@
+#/bin/bash
+
+# Just a wrapper around mailx for password input
+# Should probably be a gist, rather than in a repo but whatever
+# chmod +x this script and add it to your $PATH
+
+echo -n "Your password: "
+read -s PASS
+echo ""
+echo "Enter Content now:"
+mail -A gmail -v -S smtp-auth-password=$PASS "$@"
+
+
+# Setup your ~/.mailrc to contain:
+#
+# account gmail {
+#    set smtp-use-starttls
+#    set ssl-verify=ignore
+#    set nss-config-dir=~/.mozilla/firefox/<whatever>.default/
+#    set from="Your Name <Your email ID>"
+#    set smtp=smtp://smtp.gmail.com:587
+#    set smtp-auth=login
+#    set ssl-verify=ignore
+#    set smtp-auth-user=<Your email ID>
+#    #set smtp-auth-password=<password>
+# }
