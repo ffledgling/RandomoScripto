@@ -12,5 +12,5 @@ If you do find an error though feel free to point it out on github, using an iss
 
 
 Contents:
-1. full_mail.py 
-2. maily
+  1. full_mail.py 
+  2. maily
