@@ -1,10 +1,10 @@
 There's always room for improvement.
 
 Front-end
-[ ] Make the template HTML5 compatible.
-[ ] Improve the look of the page. (CSS, Backgrounds, fonts etc.)
-
+* [ ] Make the template HTML5 compatible.
+* [ ] Improve the look of the page. (CSS, Backgrounds, fonts etc.)
+ 
 Back-end
-[ ] Add more usable info to the page. (What could this be?)
-[ ] Improve the way we're checking for overall status
-[ ] Get the code Peer-Reviewed? (Ha Ha Ha.)
+* [ ] Add more usable info to the page. (What could this be?)
+* [ ] Improve the way we're checking for overall status
+* [ ] Get the code Peer-Reviewed? (Ha Ha Ha.)
