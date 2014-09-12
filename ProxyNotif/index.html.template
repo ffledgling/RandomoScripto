@@ -1,0 +1,47 @@
+<!-- 
+ This page "project" was a 5 minute thing.
+ If you think the HTML on this is *so* 2003,
+ Or if deprecated HTML tags inflict personal pain onto you,
+ please feel free to send us an updated template.
+ That, or pipe down.
+
+ Why are you looking at the source code anyway?
+-->
+
+<html>
+<head>
+<meta http-equiv="refresh" content="60">
+<title> [{status}] IIIT Internet</title>
+</head>
+<body>
+
+<center>
+<h1> Is it down? </h1>
+
+<hr />
+
+<h1> NKN </h1>
+<br />
+<h1> {nkn} </h2>
+<br/>
+
+<hr />
+
+<h1> Proxy </h1>
+<br />
+<h1> {proxy} </h2>
+<br/>
+
+<hr />
+
+Last updated: <tt>{updated}</tt>
+<br />
+Auto-refresh: <tt> 60 seconds </tt>
+<br />
+<br />
+Contact: <tt> sysadmins@lists.iiit.ac.in </tt>
+</center>
+
+
+</body>
+</html>

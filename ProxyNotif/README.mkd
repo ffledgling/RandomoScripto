@@ -1,0 +1,18 @@
+Description
+-----------
+
+Simple script that runs on the proxy node and gives status info.
+The poor man's publically available Nagios I guess? (Ha, no, not even close.)
+
+Setup
+-----
+
+Put these in some folder /tmp/scripts or wherever you prefer, preferably not in your document root.
+Setup a cronjob to run the script at whatever time resolutions you prefer.
+That's about it.
+
+Other
+-----
+
+You think this setup sucks? Cool, open an issue if you want something improved.
+You think you can do better? Send in a pull request.
